@@ -20,3 +20,7 @@ l’ensemble/d’un ensemble des fichier(s) :
 > $ git log -p calzone.txt
 > $ git log -p
 > $ git log -2 -p
+
+## L'option graph
+> $ git log --pretty=format:"%h %s" --graph
+Affichage du graph du répo, l'option pretty permet de modifier le rendu des logs
