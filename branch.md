@@ -30,3 +30,16 @@ Il est possible de faire un commit de merge même si les 2 branches ne divergent
 On peut lister les branches non mergées avec la commande:
 > $ git branch --no-merged
 
+## Le remisage
+Pour remiser le code qui n'est pas commiter:
+> $ git stash
+
+Pour lister les stashs sur la brache courante on utilise la commande:
+> $ git stash list
+
+Pour récupérer une stash on utilise la commande:
+> $ git stash apply
+
+Pour supprimer une stash on utilise la commande:
+> $ git stash drop
+
