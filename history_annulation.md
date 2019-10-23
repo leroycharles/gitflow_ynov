@@ -34,3 +34,13 @@ On peut également utiliser:
 
 Pour savoir qui à modifier un fichier:
 > $ git blame fichier
+
+## Visualiser les différences
+> $ git diff
+
+Pour visualiser les différences avec le dernier commit:
+> $ git diff --cached
+
+Pour visualiser les différences avec un commit en arrière:
+> $ git diff HEAD-1
+
