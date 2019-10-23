@@ -24,3 +24,13 @@ l’ensemble/d’un ensemble des fichier(s) :
 ## L'option graph
 > $ git log --pretty=format:"%h %s" --graph
 Affichage du graph du répo, l'option pretty permet de modifier le rendu des logs
+
+## Recherche dans les logs
+> $ git log -E -i --grep="text"
+
+Ici E permet de définir l'action de recherche, et i permet d'être insensible à la casse.
+On peut également utiliser:
+> $ git log -S "text"
+
+Pour savoir qui à modifier un fichier:
+> $ git blame fichier
