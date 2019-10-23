@@ -43,3 +43,18 @@ Pour récupérer une stash on utilise la commande:
 Pour supprimer une stash on utilise la commande:
 > $ git stash drop
 
+## Les tags
+Pour créer un tag léger on utilise la commande:
+> $ git tag v1
+
+Pour créer un tag annoté on utilise la commande:
+> $ git tag -a v1.0 -m "message"
+
+On peut lister les tags via la commande:
+> $ git tag
+
+On peut voir un tag annoté via la commande:
+> $ git show v1.0
+
+On peut cherhcer un tag via la commande:
+> $ git tag -l "v1.0"
