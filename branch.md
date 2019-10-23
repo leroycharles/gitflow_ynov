@@ -58,3 +58,24 @@ On peut voir un tag annoté via la commande:
 
 On peut cherhcer un tag via la commande:
 > $ git tag -l "v1.0"
+
+## Introduciton aux branches distantes
+On peut créer un serveur git à partir des commandes suivantes:
+> $ mkdir repo.git
+> $ cd repo.git
+> $ git --bare init
+
+On peut associer un repo local à un repo serveur via la commande:
+> $ git remote add origin path_to_server
+> $ git push origin master
+
+On peut lister les repo distant via la commande:
+> $ git remote
+
+On peut récupérer les éléments d'un repo distant via la commande:
+> $ git fetch origin
+> $ git merge origin/master
+
+Ce qui est l'aquivalent de la commande:
+> $ git pull nom_distant branche
+
