@@ -44,3 +44,15 @@ Pour visualiser les différences avec le dernier commit:
 Pour visualiser les différences avec un commit en arrière:
 > $ git diff HEAD-1
 
+## Restauration
+Pour restaurer un fichier dans l'état du commit précédent:
+> $ git restore fichier
+
+Pour reculer d'un commit et supprimer les modifications:
+> $ git reset HEAD-1
+
+Pour supprimer un commit avec les fichiers:
+> $ git reset --hard HEAD-1
+
+Pour faire revenir un fichier à son état initial on utilise:
+> $ git checkout fichier
